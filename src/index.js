@@ -1,27 +1,26 @@
 function updateTime() {
-    
   let joburgElement = document.querySelector("#joburg");
   if (joburgElement) {
-  let joburgDateElement = joburgElement.querySelector(".date");
-  let joburgTimeElement = joburgElement.querySelector(".time");
-  let joburgTime = moment().tz("Africa/Johannesburg");
-  joburgDateElement.innerHTML = joburgTime.format("MMMM Do YYYY");
-  joburgTimeElement.innerHTML = joburgTime.format(
-    "h:mm:ss [<small>]A[</small>]",
-  );
+    let joburgDateElement = joburgElement.querySelector(".date");
+    let joburgTimeElement = joburgElement.querySelector(".time");
+    let joburgTime = moment().tz("Africa/Johannesburg");
+    joburgDateElement.innerHTML = joburgTime.format("MMMM Do YYYY");
+    joburgTimeElement.innerHTML = joburgTime.format(
+      "h:mm:ss [<small>]A[</small>]",
+    );
   }
 
   let hiroshimaElement = document.querySelector("#hiroshima");
   if (hiroshimaElement) {
-  let hiroshimaDateElement = hiroshimaElement.querySelector(".date");
-  let hiroshimaTimeElement = hiroshimaElement.querySelector(".time");
-  let hiroshimaTime = moment().tz("Asia/Tokyo");
-  hiroshimaDateElement.innerHTML = hiroshimaTime.format("MMMM Do YYYY");
-  hiroshimaTimeElement.innerHTML = hiroshimaTime.format(
-    "h:mm:ss [<small>]A[</small>]",
-  );
+    let hiroshimaDateElement = hiroshimaElement.querySelector(".date");
+    let hiroshimaTimeElement = hiroshimaElement.querySelector(".time");
+    let hiroshimaTime = moment().tz("Asia/Tokyo");
+    hiroshimaDateElement.innerHTML = hiroshimaTime.format("MMMM Do YYYY");
+    hiroshimaTimeElement.innerHTML = hiroshimaTime.format(
+      "h:mm:ss [<small>]A[</small>]",
+    );
+  }
 }
-} 
 
 function updateCity(event) {
   let cityTimezone = event.target.value;
@@ -37,7 +36,8 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format("h:mm:ss [<small>]A[</small>]")}</div>
-        </div>`;
+        </div>
+        <a href="/">All cities</a>`;
 }
 updateTime();
 setInterval(updateTime, 1000);
