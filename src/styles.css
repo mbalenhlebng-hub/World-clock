@@ -1,75 +1,73 @@
 body {
-    background: radial-gradient(circle at top, #0b3d91, #000814 70%);
-    color: antiquewhite;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
+  background: radial-gradient(circle at top, #0b3d91, #000814 70%);
+  color: antiquewhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
 }
 
 h2 {
-    margin: 0 0 10px;
-    font-size: 28px;
+  margin: 0 0 10px;
+  font-size: 28px;
 }
-
 
 select {
-    display: block;
-    font-size: 16px;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
+  display: block;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(10, 25, 47, 0.8);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
+  backdrop-filter: blur(6px);
+  outline: none;
 }
 
-
-
 .container {
-    background: rgba(10, 25, 47, 0.85);
-    border-radius: 20px;
-    padding: 30px;
-    width: 700px;
-    margin: 80px auto;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
-  
+  background: rgba(10, 25, 47, 0.85);
+  border-radius: 20px;
+  padding: 30px;
+  width: 700px;
+  margin: 80px auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
 }
 
 .city {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    padding: 30px 0;
-    border-bottom: 1px dashed rgba(201, 179, 179, 0.2);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(201, 179, 179, 0.2);
 }
 
 .city:last-child {
-    border: none;
+  border: none;
 }
 
 .time {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .time small {
-    font-size: 24px;
-    vertical-align: middle;
-    
-
+  font-size: 24px;
+  vertical-align: middle;
 }
 
 .date {
-    opacity: 0.7;
+  opacity: 0.7;
 }
-
-
 
 footer {
   text-align: center;
   font-size: 15px;
-  color: rgb(184, 178, 170) ;
+  color: rgb(184, 178, 170);
 }
